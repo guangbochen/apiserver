@@ -5,16 +5,17 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/golang/mock/gomock"
-	"github.com/rancher/apiserver/pkg/apierror"
-	"github.com/rancher/apiserver/pkg/fakes"
-	"github.com/rancher/apiserver/pkg/parse"
-	"github.com/rancher/apiserver/pkg/types"
-	"github.com/rancher/apiserver/pkg/writer"
-	"github.com/rancher/wrangler/pkg/schemas"
-	"github.com/rancher/wrangler/pkg/schemas/validation"
+	"github.com/oneblock-ai/apiserver/v2/pkg/apierror"
+	"github.com/oneblock-ai/apiserver/v2/pkg/fakes"
+	"github.com/oneblock-ai/apiserver/v2/pkg/parse"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+	"github.com/rancher/wrangler/v2/pkg/schemas"
+	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
+	"github.com/oneblock-ai/apiserver/v2/pkg/writer"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
+
+	"go.uber.org/mock/gomock"
 )
 
 type ServerSuite struct {

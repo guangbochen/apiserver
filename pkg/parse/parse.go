@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/rancher/apiserver/pkg/types"
-	"github.com/rancher/apiserver/pkg/urlbuilder"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+	"github.com/oneblock-ai/apiserver/v2/pkg/urlbuilder"
 )
 
 const (

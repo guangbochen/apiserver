@@ -6,8 +6,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/rancher/apiserver/pkg/types"
-	"github.com/rancher/wrangler/pkg/name"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+	"github.com/rancher/wrangler/v2/pkg/name"
 )
 
 const (

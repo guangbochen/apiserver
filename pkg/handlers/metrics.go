@@ -3,9 +3,9 @@ package handlers
 import (
 	"strconv"
 
-	"github.com/rancher/apiserver/pkg/apierror"
-	"github.com/rancher/apiserver/pkg/metrics"
-	"github.com/rancher/apiserver/pkg/types"
+	"github.com/oneblock-ai/apiserver/v2/pkg/apierror"
+	"github.com/oneblock-ai/apiserver/v2/pkg/metrics"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
 )
 
 func MetricsHandler(successCode string, next func(apiRequest *types.APIRequest) (types.APIObject, error)) func(apiRequest *types.APIRequest) (types.APIObject, error) {

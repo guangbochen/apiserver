@@ -6,8 +6,9 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+
 	"github.com/gorilla/websocket"
-	"github.com/rancher/apiserver/pkg/types"
 )
 
 type WatchSession struct {

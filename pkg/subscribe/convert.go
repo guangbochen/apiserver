@@ -3,8 +3,8 @@ package subscribe
 import (
 	"io"
 
-	"github.com/rancher/apiserver/pkg/types"
-	"github.com/rancher/apiserver/pkg/writer"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+	"github.com/oneblock-ai/apiserver/v2/pkg/writer"
 )
 
 type Converter struct {

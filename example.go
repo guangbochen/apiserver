@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/rancher/apiserver/pkg/server"
-	"github.com/rancher/apiserver/pkg/store/apiroot"
-	"github.com/rancher/apiserver/pkg/store/empty"
-	"github.com/rancher/apiserver/pkg/types"
+	"github.com/oneblock-ai/apiserver/v2/pkg/server"
+	"github.com/oneblock-ai/apiserver/v2/pkg/store/apiroot"
+	"github.com/oneblock-ai/apiserver/v2/pkg/store/empty"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
 )
 
 type Foo struct {

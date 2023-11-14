@@ -7,8 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rancher/apiserver/pkg/types"
-	"github.com/rancher/wrangler/pkg/schemas"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+	"github.com/rancher/wrangler/v2/pkg/schemas"
+
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,14 +6,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/rancher/apiserver/pkg/builtin"
-	"github.com/rancher/apiserver/pkg/handlers"
-	"github.com/rancher/apiserver/pkg/metrics"
-	"github.com/rancher/apiserver/pkg/parse"
-	"github.com/rancher/apiserver/pkg/subscribe"
-	"github.com/rancher/apiserver/pkg/types"
-	"github.com/rancher/apiserver/pkg/writer"
-	"github.com/rancher/wrangler/pkg/schemas/validation"
+	"github.com/oneblock-ai/apiserver/v2/pkg/builtin"
+	"github.com/oneblock-ai/apiserver/v2/pkg/handlers"
+	"github.com/oneblock-ai/apiserver/v2/pkg/metrics"
+	"github.com/oneblock-ai/apiserver/v2/pkg/parse"
+	"github.com/oneblock-ai/apiserver/v2/pkg/subscribe"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
+	"github.com/oneblock-ai/apiserver/v2/pkg/writer"
 )
 
 type RequestHandler interface {

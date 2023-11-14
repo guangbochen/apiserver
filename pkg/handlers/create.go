@@ -1,10 +1,10 @@
 package handlers
 
 import (
-	"github.com/rancher/apiserver/pkg/apierror"
-	"github.com/rancher/apiserver/pkg/parse"
-	"github.com/rancher/apiserver/pkg/types"
-	"github.com/rancher/wrangler/pkg/schemas/validation"
+	"github.com/oneblock-ai/apiserver/v2/pkg/apierror"
+	"github.com/oneblock-ai/apiserver/v2/pkg/parse"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
 )
 
 func CreateHandler(apiOp *types.APIRequest) (types.APIObject, error) {

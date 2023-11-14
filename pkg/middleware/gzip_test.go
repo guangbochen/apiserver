@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/rancher/apiserver/pkg/fakes"
+	"github.com/oneblock-ai/apiserver/v2/pkg/fakes"
 	"github.com/stretchr/testify/assert"
 )
 

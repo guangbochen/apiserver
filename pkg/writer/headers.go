@@ -1,7 +1,7 @@
 package writer
 
 import (
-	"github.com/rancher/apiserver/pkg/types"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
 )
 
 func AddCommonResponseHeader(apiOp *types.APIRequest) error {
