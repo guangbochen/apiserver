@@ -6,7 +6,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 )
 
-const metricsEnv = "CATTLE_PROMETHEUS_METRICS"
+const metricsEnv = "API_SERVER_PROMETHEUS_METRICS"
 
 func init() {
 	if os.Getenv(metricsEnv) == "true" {

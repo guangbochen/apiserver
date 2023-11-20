@@ -2,6 +2,7 @@ package empty
 
 import (
 	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+
 	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
 )
 

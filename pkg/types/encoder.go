@@ -1,11 +1,13 @@
 package types
 
 import (
-	"encoding/json"
 	"io"
 
 	"github.com/ghodss/yaml"
+	jsoniter "github.com/json-iterator/go"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 func JSONEncoder(writer io.Writer, v interface{}) error {
 	return json.NewEncoder(writer).Encode(v)

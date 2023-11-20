@@ -1,17 +1,20 @@
 package parse
 
 import (
-	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
 
-	"github.com/oneblock-ai/apiserver/v2/pkg/apierror"
-	"github.com/oneblock-ai/apiserver/v2/pkg/types"
+	jsoniter "github.com/json-iterator/go"
 	"github.com/rancher/wrangler/v2/pkg/data/convert"
 	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
 	"k8s.io/apimachinery/pkg/util/yaml"
+
+	"github.com/oneblock-ai/apiserver/v2/pkg/apierror"
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 const reqMaxSize = (2 * 1 << 20) + 1
 

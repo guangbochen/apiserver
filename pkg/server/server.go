@@ -12,8 +12,9 @@ import (
 	"github.com/oneblock-ai/apiserver/v2/pkg/parse"
 	"github.com/oneblock-ai/apiserver/v2/pkg/subscribe"
 	"github.com/oneblock-ai/apiserver/v2/pkg/types"
-	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
 	"github.com/oneblock-ai/apiserver/v2/pkg/writer"
+
+	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
 )
 
 type RequestHandler interface {
@@ -67,6 +68,7 @@ func DefaultAPIServer() *Server {
 		URLParser:     parse.MuxURLParser,
 	}
 
+	// register a default subscribe handler
 	subscribe.Register(s.Schemas, subscribe.DefaultGetter, os.Getenv("SERVER_VERSION"))
 	return s
 }

@@ -1,6 +1,7 @@
 package apierror
 
 import (
+	"errors"
 	"fmt"
 
 	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
@@ -57,12 +58,14 @@ func (a *APIError) Error() string {
 }
 
 func IsAPIError(err error) bool {
-	_, ok := err.(*APIError)
+	var APIError *APIError
+	ok := errors.As(err, &APIError)
 	return ok
 }
 
 func IsConflict(err error) bool {
-	if apiError, ok := err.(*APIError); ok {
+	var apiError *APIError
+	if errors.As(err, &apiError) {
 		return apiError.Code.Status == 409
 	}
 

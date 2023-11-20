@@ -1,11 +1,14 @@
 package writer
 
 import (
-	"encoding/json"
 	"strings"
+
+	jsoniter "github.com/json-iterator/go"
 
 	"github.com/oneblock-ai/apiserver/v2/pkg/types"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 const (
 	JSURL          = "https://releases.rancher.com/api-ui/%API_UI_VERSION%/ui.min.js"

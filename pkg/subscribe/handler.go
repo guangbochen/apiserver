@@ -1,15 +1,17 @@
 package subscribe
 
 import (
-	"encoding/json"
 	"time"
 
-	"github.com/oneblock-ai/apiserver/v2/pkg/types"
-	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
-
 	"github.com/gorilla/websocket"
+	jsoniter "github.com/json-iterator/go"
+	"github.com/rancher/wrangler/v2/pkg/schemas/validation"
 	"github.com/sirupsen/logrus"
+
+	"github.com/oneblock-ai/apiserver/v2/pkg/types"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 var upgrader = websocket.Upgrader{
 	HandshakeTimeout:  60 * time.Second,
